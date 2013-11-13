@@ -2,8 +2,8 @@ OMRails::Application.routes.draw do
   resources :pins
 
   devise_for :users
+  root  :to =>"pins#index"
 get 'about' => 'pages#about'
-root  :to =>'pages#home'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
