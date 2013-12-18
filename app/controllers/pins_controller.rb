@@ -3,7 +3,8 @@ class PinsController < ApplicationController
   before_action :correct_user, only: [:edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
   def index
-   @pins = Pin.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 4)
+   #@pins = Pin.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 4)
+   @pins = Pin.find_with_reputation(:votes, :all, order: "votes desc")
  end
 
   def show
@@ -37,6 +38,13 @@ class PinsController < ApplicationController
   def destroy
     @pin.destroy
     redirect_to pins_url
+  end
+
+   def vote
+    value = params[:type] == "up" ? 1 : -1
+      @pin = Pin.find(params[:id])
+      @pin.add_or_update_evaluation(:votes, value, current_user)
+      redirect_to :back, notice: 'Thanks for voting!'
   end
 
   private

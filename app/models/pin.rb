@@ -4,6 +4,9 @@ class Pin < ActiveRecord::Base
 
 validates :description, presence: true
 validates :image, presence: true
+
+has_reputation :votes, source: :user, aggregated_by: :sum
+
 acts_as_commontable
 
 end
