@@ -7,7 +7,9 @@
       <div class="panel-body">
         <p><%= pin.description %></p>
         <p><strong><%= pin.user.name if pin.user %></strong></p>
-                
+              <%= pluralize pin.reputation_for(:votes).to_i, "vote" %>
+              <%= link_to "up", vote_pin_path(pin, type: "up"), method: "post" %>
+              <%= link_to "down", vote_pin_path(pin, type: "down"), method: "post" %>
         <% if pin.user == current_user %>
           <div class="actions">
           <%= link_to raw('<span class="glyphicon glyphicon-edit"></span>Edit'), edit_pin_path(pin) %>
@@ -19,5 +21,5 @@
   <% end %>
 </div>
 <div class="center">
-   <%= will_paginate @collection, renderer: BootstrapPagination::Rails %>
+
 </div>
