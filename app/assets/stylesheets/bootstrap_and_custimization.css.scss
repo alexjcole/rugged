@@ -6,20 +6,23 @@ $font-family-sans-serif: 'Lato', Helvetica Neue, Arial, sans-serif;
 
 $navbar-height: 45px;
 $navbar-default-bg: black;
-$navbar-default-brand-color: #1b9cd4;
+$navbar-default-brand-color: #FF9400;
 $brand-primary: #1b9cd4;
 
 $jumbotron-bg: black;
-$jumbotron-color: #1b9cd4;;
+$jumbotron-color: #FF9400;;
 
-
+.btn-primary {
+	background-color: #007143 !important;
+	border-color: #007143 !important;
+}
 
 h1 {
-	color: #1b9cd4;
+	color: #FF9400;
 }
 
 p {
-	color: #1b9cd4;
+	color: #FF9400;
 }
 
 
@@ -32,4 +35,6 @@ p {
 .navbar-brand {
 	font-weight: bold;
 }
+
+
 

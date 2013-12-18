@@ -1,6 +1,6 @@
 OMRails::Application.routes.draw do
+  mount Commontator::Engine => '/commontator'
   resources :pins
-
   devise_for :users
   root  :to =>"pins#index"
 get 'about' => 'pages#about'

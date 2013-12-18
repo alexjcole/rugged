@@ -11,6 +11,8 @@ group :development, :test do
 gem 'sqlite3'
 end
 
+gem 'acts_as_votable'
+gem 'commontator', '~> 4.2.0'
 gem 'sass-rails', '>= 3.2' # sass-rails needs to be higher than 3.2
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
