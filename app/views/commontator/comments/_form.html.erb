@@ -32,7 +32,7 @@
     <%= f.submit (comment.id.blank? ? \
                    config.comment_create_verb_present : \
                    config.comment_edit_verb_present).capitalize + \
-          ' ' + config.comment_name %>
+          ' ' + config.comment_name, class: "btn btn-lg btn-primary btn-block" %>
   </div>
   
 <% end %>

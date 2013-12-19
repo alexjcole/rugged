@@ -7,10 +7,12 @@
       <div class="panel-body">
         <p><%= pin.description %></p>
         <p><strong><%= pin.user.name if pin.user %></strong></p>
-
-          <%= link_to "Upvote", like_pin_path(pin), method: :put %>
-          <%= link_to "Downvote", dislike_pin_path(pin), method: :put %>
+          <%= link_to raw('<span class="glyphicon glyphicon-hand-up"></span>'), like_pin_path(pin), method: :put %>
+          
+          <%= link_to  raw('<span class="glyphicon glyphicon-hand-down"></span>'), dislike_pin_path(pin), method: :put %>
+          <div class="vote">
           <%= pin.votes.size %>
+          </div>
         <% if pin.user == current_user %>
           <div class="actions">
           <%= link_to raw('<span class="glyphicon glyphicon-edit"></span>Edit'), edit_pin_path(pin) %>

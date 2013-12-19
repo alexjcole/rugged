@@ -2,15 +2,17 @@
 
 $body-bg: #6b6666;
 $font-family-sans-serif: 'Lato', Helvetica Neue, Arial, sans-serif;
-
-
-$navbar-height: 45px;
+$navbar-height: 80px;
 $navbar-default-bg: black;
 $navbar-default-brand-color: #FF9400;
-$brand-primary: #1b9cd4;
-
+$brand-primary: white;
 $jumbotron-bg: black;
 $jumbotron-color: #FF9400;;
+
+
+.navbar-brand, a:hover {
+	color: red;
+}
 
 .btn-primary {
 	background-color: #007143 !important;
@@ -34,7 +36,54 @@ p {
 
 .navbar-brand {
 	font-weight: bold;
+	font-size: 100px;
 }
+
+.alert, .aler-info {
+	background-color: #FF9400;
+	border-color: black;
+	color: black;
+}
+
+.vote {
+	color: white;
+}
+
+.panel {
+	border: 0 px solid black;
+}
+
+.panel-footer a {
+	color: black !important;
+	text-decoration: none;
+}
+
+.comment-box {
+	border:1px solid black;
+	background-color: white;
+	padding: 10px;
+}
+
+.comment-box a {
+	color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
