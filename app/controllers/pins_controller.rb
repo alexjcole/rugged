@@ -4,6 +4,7 @@ class PinsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
   def index
    @pins = Pin.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 4)
+  
  end
 
   def show
@@ -38,6 +39,17 @@ class PinsController < ApplicationController
     @pin.destroy
     redirect_to pins_url
   end
+    def upvote
+  @pin = Pin.find(params[:id])
+  @pin.liked_by current_user
+  redirect_to :back, notice: "Your POSITIVE vote has been tallied!"
+end
+
+def downvote
+  @pin = Pin.find(params[:id])
+  @pin.unliked_by current_user
+redirect_to :back, notice: "Your NEGATIVE vote has been tallied!"
+end
 
   private
     # Use callbacks to share common setup or constraints between actions.
