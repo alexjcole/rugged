@@ -1,17 +1,25 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 
+@font-face {
+    font-family: 'ethno';
+    src: url(font-path('ethnocentric.eot') + "?#iefix") format('embedded-opentype'),
+         url(font-path('ethnocentric.woff')) format('woff'), 
+         url(font-path('ethnocentric.ttf'))  format('truetype'),
+         url(font-path('ethnocentric.svg') + "#MyFont") format('svg');
+}
+
 $body-bg: #6b6666;
 $font-family-sans-serif: 'Lato', Helvetica Neue, Arial, sans-serif;
-$navbar-height: 80px;
+$navbar-height: 100px;
 $navbar-default-bg: black;
-$navbar-default-brand-color: #FF9400;
+$navbar-default-brand-color: #848484;
 $brand-primary: white;
 $jumbotron-bg: black;
 $jumbotron-color: #FF9400;;
 
 
-.navbar-brand, a:hover {
-	color: red;
+a:hover {
+	color: white !important;
 }
 
 .btn-primary {
@@ -36,7 +44,8 @@ p {
 
 .navbar-brand {
 	font-weight: bold;
-	font-size: 100px;
+	font-size: 80px;
+	font-family: 'ethno';
 }
 
 .alert, .aler-info {
@@ -67,8 +76,9 @@ p {
 .comment-box a {
 	color: black;
 }
-
-
+.omg {
+	color: #FF9400;
+}
 
 
 
