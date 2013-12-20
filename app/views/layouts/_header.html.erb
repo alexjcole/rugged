@@ -17,13 +17,23 @@
   <div class="collapse navbar-collapse navbar-ex1-collapse">
    
     <ul class="nav navbar-nav navbar-right">
-      <li><%= link_to raw('<span class="glyphicon glyphicon-heart"></span>  Home'), root_path%></li>
+      <li>
+        <%= link_to raw('<span class="glyphicon glyphicon-heart"></span>  Home'), root_path%>
+      </li>
        <% if user_signed_in? %>
-       <li><%= link_to raw('<span class="glyphicon glyphicon-plus"></span>  New Post'), new_pin_path %></li>
-        <li><%= link_to raw('<span class="glyphicon glyphicon-wrench"></span> Edit Account'), edit_user_registration_path %></li>
-       <li><%= link_to raw('<span class="glyphicon glyphicon-log-out"></span> Log out'), destroy_user_session_path, method: :delete %></li>
+       <li>
+        <%= link_to raw('<span class="glyphicon glyphicon-plus"></span>  New Post'), new_pin_path %>
+      </li>
+        <li>
+          <%= link_to raw('<span class="glyphicon glyphicon-wrench"></span> Edit Account'), edit_user_registration_path %>
+        </li>
+       <li>
+        <%= link_to raw('<span class="glyphicon glyphicon-log-out"></span> Log out'), destroy_user_session_path, method: :delete %>
+      </li>
        <%else %>
-       <li><%= link_to raw('<span class="glyphicon glyphicon-log-in"></span>  Sign in'), new_user_session_path %></li>
+       <li>
+        <%= link_to raw('<span class="glyphicon glyphicon-log-in"></span>  Sign in'), new_user_session_path %>
+     </li>
     <% end %>
     </ul>
   </div><!-- /.navbar-collapse -->
