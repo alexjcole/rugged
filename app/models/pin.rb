@@ -5,5 +5,7 @@ class Pin < ActiveRecord::Base
 validates :description, presence: true
 validates :image, presence: true
 acts_as_commontable
+ acts_as_votable
+
 
 end

@@ -26,13 +26,11 @@
 .comment_body {
   margin-left: 55px;
   margin-right: 45px;
-
   padding: 8px;
 }
 
 .comment_body p {
 	margin: 0px;
-
 	overflow: hidden;
 }
 
