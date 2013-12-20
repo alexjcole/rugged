@@ -71,7 +71,7 @@ OMRails::Application.configure do
 
 
 
-config.action_mailer.default_url_options = {:host => 'http://fathomless-bayou-9051.herokuapp.com/'}
+config.action_mailer.default_url_options = {:host => 'http://fathomless-bayou-9051.herokuapp.com'}
 config.action_mailer.delivery_method = :smtp
 config.action_mailer.smtp_settings = {
   :address => "127.0.0.1",
@@ -79,8 +79,17 @@ config.action_mailer.smtp_settings = {
   :domain  => 'http://fathomless-bayou-9051.herokuapp.com/'
 }
 
-ActionMailer::Base.smtp_settings = { :address => "smtp.sendgrid.net", :port => 25, :user_name => "eanplatter", :password => "123iloveme", :authentication => :login }
+require 'smtp_tls'
 
+ActionMailer::Base.smtp_settings = {
+   :user_name => "eanplatter@gmail.com",
+   :password => "X/6@gmR;khMn[kY",
+   :domain => "http://fathomless-bayou-9051.herokuapp.com",
+   :address => "smtp.gmail.com",
+   :port => "xxx",
+   :authentication => :plain,
+   :enable_starttls_auto => true
+};
 
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
