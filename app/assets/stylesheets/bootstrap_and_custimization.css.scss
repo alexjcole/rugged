@@ -19,11 +19,6 @@ $jumbotron-color: #FF9400;;
 
 
 
-.btn-primary {
-	background-color: #007143 !important;
-	border-color: #007143 !important;
-}
-
 h1 {
 	color: #FF9400;
 }
@@ -46,12 +41,6 @@ a:hover {
 	font-weight: bold;
 	font-size: 80px;
 	font-family: 'ethno';
-}
-
-.alert, .aler-info {
-	background-color: #FF9400;
-	border-color: black;
-	color: black;
 }
 
 .vote {
@@ -80,12 +69,98 @@ a:hover {
 	color: #FF9400;
 }
 
+.custom-pagination {
+	color: black;
+}
 
 
 
+/* BUTTONS */
 
+/* INFO */
 
+.btn-info{
+  background-color: #FF9400;
+  color: white !important;
+  border-color: #FF9400;
+}
 
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info.active {
+  background-color: transparent;
+  color: #FF9400 !important;
+  border-color: #FF9400;
+}
+
+/* DANGER */
+
+.btn-danger{
+  background-color: #DD3C3C;
+  color: white !important;
+  border-color: #DD3C3C;
+}
+
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active,
+.btn-danger.active {
+  background-color: transparent;
+  color: #DD3C3C !important;
+  border-color: #DD3C3C;
+}
+
+/* PRIMARY */
+
+.btn-primary{
+  background-color: #1F5F2F;
+  color: white !important;
+  border-color: #1F5F2F;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+  background-color: transparent;
+  color: #1F5F2F !important;
+  border-color: #1F5F2F;
+}
+
+/* WARNING */
+
+.btn-warning{
+  background-color: #575757;
+  color: white !important;
+  border-color: #575757;
+}
+
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active,
+.btn-warning.active {
+  color: #575757 !important;
+  background-color: transparent;
+  border-color: #575757;
+}
+
+/* SUCCESS */
+
+.btn-success{
+  background-color: #214F7B;
+  color: white !important;
+  border-color: #214F7B;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active {
+  color: #214F7B !important;
+  background-color: transparent;
+  border-color: #214F7B;
+}
 
 
 
