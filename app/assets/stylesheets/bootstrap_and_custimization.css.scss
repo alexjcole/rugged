@@ -17,7 +17,10 @@ $brand-primary: white;
 $jumbotron-bg: black;
 $jumbotron-color: #FF9400;;
 
-
+.logo {
+  font-family: 'ethno';
+  color: #848484 !important;
+}
 
 .btn-primary {
 	background-color: #007143 !important;
@@ -76,6 +79,7 @@ a:hover {
 .comment-box a {
 	color: black;
 }
+
 .omg {
 	color: #FF9400;
 }
