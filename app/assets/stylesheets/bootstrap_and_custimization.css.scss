@@ -35,6 +35,10 @@ p {
 	color: #FF9400;
 }
 
+a:hover {
+	color: green !important;
+	opacity: 0.5 !important;
+}
 
 @import 'bootstrap';
 
