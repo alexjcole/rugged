@@ -69,6 +69,16 @@ OMRails::Application.configure do
   # the I18n.default_locale when a translation can not be found).
   config.i18n.fallbacks = true
 
+
+
+config.action_mailer.default_url_options = {:host => 'yourdomain.com'}
+config.action_mailer.delivery_method = :smtp
+config.action_mailer.smtp_settings = {
+  :address => "127.0.0.1",
+  :port    => 25,
+  :domain  => 'yourdomain.com'
+}
+
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
 
