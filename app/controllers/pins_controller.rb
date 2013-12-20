@@ -2,9 +2,10 @@ class PinsController < ApplicationController
   before_action :set_pin, only: [:show, :edit, :update, :destroy]
   before_action :correct_user, only: [:edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
+  require 'will_paginate/array'
   def index
-   #@pins = Pin.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 4)
-    @pins = Pin.all.sort_by{|pin|-pin.votes.size}
+   @pins = Pin.all.sort_by{|pin|-pin.votes.size}.paginate(:page => params[:page], :per_page => 4)
+    
 
  end
 
