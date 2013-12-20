@@ -19,6 +19,11 @@ $jumbotron-color: #FF9400;;
 
 
 
+.btn-primary {
+	background-color: #007143 !important;
+	border-color: #007143 !important;
+}
+
 h1 {
 	color: #FF9400;
 }
@@ -41,6 +46,12 @@ a:hover {
 	font-weight: bold;
 	font-size: 80px;
 	font-family: 'ethno';
+}
+
+.alert, .aler-info {
+	background-color: #FF9400;
+	border-color: black;
+	color: black;
 }
 
 .vote {
@@ -123,7 +134,7 @@ a:hover {
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active {
-  background-color: transparent;
+  background-color: transparent !important;
   color: #1F5F2F !important;
   border-color: #1F5F2F;
 }
@@ -161,6 +172,19 @@ a:hover {
   background-color: transparent;
   border-color: #214F7B;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
