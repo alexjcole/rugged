@@ -79,6 +79,9 @@ config.action_mailer.smtp_settings = {
   :domain  => 'http://fathomless-bayou-9051.herokuapp.com/'
 }
 
+ActionMailer::Base.smtp_settings = { :address => "smtp.sendgrid.net", :port => 25, :user_name => "eanplatter", :password => "123iloveme", :authentication => :login }
+
+
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
 
