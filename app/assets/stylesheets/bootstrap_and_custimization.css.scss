@@ -40,6 +40,7 @@ $jumbotron-color: #FF9400;
 
 .landing p {
   font-size: 50px;
+   opacity: 0.85;
 }
 
 .navbar {
@@ -115,6 +116,12 @@ a:hover {
 
 .landingText {
   color: #848484;
+  opacity: 0.85;
+}
+.landingTextGrey {
+  opacity: 0.85;
+  font-family: 'ethno';
+  color: #848484 !important ;
 }
 
 .custom-pagination {
