@@ -15,11 +15,34 @@ $navbar-default-bg: black;
 $navbar-default-brand-color: #848484;
 $brand-primary: white;
 $jumbotron-bg: black;
-$jumbotron-color: #FF9400;;
+$jumbotron-color: #FF9400;
+
+.landing {
+  background: url(http://wallpoper.com/images/00/45/01/48/foggy-mountain-forest_00450148.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 700px;
+  margin: 0px !important;
+  padding: 20px;
+  padding-top: 150px;
+}
+
+.landing h1 {
+  font-size: 150px !important;
+}
+
+.landing p {
+  font-size: 50px;
+}
+
+.navbar {
+  margin: 0px !important;
+}
 
 .logo {
   font-family: 'ethno';
-  color: #848484 !important;
+  color: #848484 !important ;
 }
 
 .btn-primary {
@@ -146,18 +169,18 @@ a:hover {
 /* WARNING */
 
 .btn-warning{
-  background-color: #575757;
+  background-color: #848484;
   color: white !important;
-  border-color: #575757;
+  border-color: #848484;
 }
 
 .btn-warning:hover,
 .btn-warning:focus,
 .btn-warning:active,
 .btn-warning.active {
-  color: #575757 !important;
+  color: #848484 !important;
   background-color: transparent;
-  border-color: #575757;
+  border-color: #848484;
 }
 
 /* SUCCESS */

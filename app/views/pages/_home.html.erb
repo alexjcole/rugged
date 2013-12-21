@@ -1,8 +1,12 @@
-<div class="jumbotron center">
+<% if user_signed_in? %>
+	<%= render 'app/layouts/header'%>
+<% else %>
+<div class="landing center">
 	<h1 class="logo"><span class="omg">R</span>UGGED</h1>
 	<p>Are you Rugged?</p>
 	<p>
 		<%= link_to "Log in", new_user_session_path, class: "btn btn-warning btn-lg" %>
-		<%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+		<%= link_to "Sign up", new_user_registration_path, class: "btn btn-info btn-lg" %>
 	</p>
 </div>
+<% end %>
