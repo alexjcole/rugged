@@ -4,7 +4,7 @@ class PinsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
   require 'will_paginate/array'
   def index
-   @pins = Pin.all.sort_by{|pin|-pin.votes.size}.paginate(:page => params[:page], :per_page => 4)
+   @pins = Pin.all.sort_by{|pin|-pin.likes.size}.paginate(:page => params[:page], :per_page => 4)
     
 
  end
@@ -43,14 +43,22 @@ class PinsController < ApplicationController
   end
     def upvote
   @pin = Pin.find(params[:id])
-  @pin.liked_by current_user
-  redirect_to :back, notice: "Your POSITIVE vote has been tallied!"
+    @pin.liked_by current_user
+    if @pin.vote_registered?
+   redirect_to :back, notice: "Thanks for voting!"
+  else
+   redirect_to :back, notice: "You may only vote once, either for or against." 
+ end
 end
 
 def downvote
   @pin = Pin.find(params[:id])
-  @pin.unliked_by current_user
-redirect_to :back, notice: "Your NEGATIVE vote has been tallied!"
+  @pin.disliked_by current_user
+   if @pin.vote_registered?
+   redirect_to :back, notice: "Thanks for voting!"
+  else
+   redirect_to :back, notice: "You may only vote once, either for or against." 
+ end
 end
 
   private
