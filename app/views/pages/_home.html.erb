@@ -3,10 +3,12 @@
 <% else %>
 <div class="landing center">
 	<h1 class="logo"><span class="omg">R</span>UGGED</h1>
-	<p>Are you Rugged?</p>
+	<p>Are You <span class="logo"><span class="landingText">RUGGED</span></span>?</p>
+	<div class="text-center">
 	<p>
-		<%= link_to "Log in", new_user_session_path, class: "btn btn-warning btn-lg" %>
-		<%= link_to "Sign up", new_user_registration_path, class: "btn btn-info btn-lg" %>
+		<%= link_to "Log in", new_user_session_path, class: "btn btn-warning btn-lg btn-block button-box" %>
+		<%= link_to "Sign up", new_user_registration_path, class: "btn btn-info btn-lg btn-block button-box" %>
 	</p>
+	</div>
 </div>
 <% end %>
