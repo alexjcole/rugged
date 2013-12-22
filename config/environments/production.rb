@@ -100,7 +100,7 @@ ActionMailer::Base.smtp_settings = {
   config.log_formatter = ::Logger::Formatter.new
 
   #note to set this to your actual host
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.default_url_options = { :host => 'http://fathomless-bayou-9051.herokuapp.com/' }
 
   # Sets Paperclip to upload images to Amazon s3
   config.paperclip_defaults = {
