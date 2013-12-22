@@ -6,7 +6,9 @@ gem 'rails', '4.0.0'
 group :production do
 	gem 'pg'
 	gem 'rails_12factor'
+	gem 'simple_postmark'
 end
+
 group :development, :test do 
 gem 'sqlite3'
 end
