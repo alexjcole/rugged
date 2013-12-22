@@ -71,9 +71,13 @@ OMRails::Application.configure do
 
 
 
-config.action_mailer.delivery_method = :simple_postmark
-config.action_mailer.simple_postmark_settings = { api_key: 'b40a4d4d-ea9c-4699-86c8-e630e628f229' }
-
+config.action_mailer.default_url_options = {:host => 'http://fathomless-bayou-9051.herokuapp.com/'}
+config.action_mailer.delivery_method = :smtp
+config.action_mailer.smtp_settings = {
+:address => "127.0.0.1",
+:port => 25,
+:domain => 'http://fathomless-bayou-9051.herokuapp.com/'
+}
 
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
