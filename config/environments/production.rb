@@ -73,22 +73,22 @@ OMRails::Application.configure do
 
 config.action_mailer.default_url_options = {:host => 'http://fathomless-bayou-9051.herokuapp.com/'}
 config.action_mailer.delivery_method = :smtp
+config.action_mailer.perform_deliveries = true
+config.action_mailer.raise_delivery_errors = false
+config.action_mailer.default :charset => "utf-8"
+
 config.action_mailer.smtp_settings = {
-:address => "127.0.0.1",
-:port => 25,
-:domain => 'http://fathomless-bayou-9051.herokuapp.com/'
+address: "smtp.gmail.com",
+port: 587,
+domain: "http://fathomless-bayou-9051.herokuapp.com/",
+authentication: "plain",
+enable_starttls_auto: true,
+user_name: ENV["alexjcole@gmail.com"],
+password: ENV["Thovqhib5775"]
 }
 
-ActionMailer::Base.delivery_method = :smtp
-ActionMailer::Base.smtp_settings = {
-:tls => true,
-:address => "smtp.postmarkapp.com",
-:port => 25,
-:domain => "http://fathomless-bayou-9051.herokuapp.com/",
-:authentication => :login,
-:user_name => "b40a4d4d-ea9c-4699-86c8-e630e628f229",
-:password => "b40a4d4d-ea9c-4699-86c8-e630e628f229"
-}
+
+
 
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
@@ -100,7 +100,7 @@ ActionMailer::Base.smtp_settings = {
   config.log_formatter = ::Logger::Formatter.new
 
   #note to set this to your actual host
-  config.action_mailer.default_url_options = { :host => 'http://fathomless-bayou-9051.herokuapp.com/' }
+
 
   # Sets Paperclip to upload images to Amazon s3
   config.paperclip_defaults = {
