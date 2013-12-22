@@ -83,8 +83,8 @@ config.action_mailer.default :charset => "utf-8"
 #domain: "http://fathomless-bayou-9051.herokuapp.com/",
 #authentication: "plain",
 #enable_starttls_auto: true,
-#user_name: "alexjcole@gmail.com",
-#password: "Thovqhib5775"
+#user_name: "",
+#password: ""
 #}
 
 config.action_mailer.smtp_settings = {
