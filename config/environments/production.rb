@@ -77,14 +77,24 @@ config.action_mailer.perform_deliveries = true
 config.action_mailer.raise_delivery_errors = false
 config.action_mailer.default :charset => "utf-8"
 
+#config.action_mailer.smtp_settings = {
+#address: "smtp.gmail.com",
+#port: 587,
+#domain: "http://fathomless-bayou-9051.herokuapp.com/",
+#authentication: "plain",
+#enable_starttls_auto: true,
+#user_name: "alexjcole@gmail.com",
+#password: "Thovqhib5775"
+#}
+
 config.action_mailer.smtp_settings = {
-address: ENV['smtp.postmarkapp.com'],
-port: '25',
+address: "smtp.postmarkapp.com",
+port: 25,
 domain: "http://fathomless-bayou-9051.herokuapp.com/",
-user_name: ENV['b40a4d4d-ea9c-4699-86c8-e630e628f229'],
-password: ENV['b40a4d4d-ea9c-4699-86c8-e630e628f229'],
 authentication: "plain",
-enable_starttls_auto: true
+enable_starttls_auto: true,
+user_name: "b40a4d4d-ea9c-4699-86c8-e630e628f229",
+password: "b40a4d4d-ea9c-4699-86c8-e630e628f229"
 }
 
 
