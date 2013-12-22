@@ -85,7 +85,7 @@ config.action_mailer.simple_postmark_settings = { api_key: 'b40a4d4d-ea9c-4699-8
   config.log_formatter = ::Logger::Formatter.new
 
   #note to set this to your actual host
-  config.action_mailer.default_url_options = { :host => 'http://fathomless-bayou-9051.herokuapp.com/' }
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
   # Sets Paperclip to upload images to Amazon s3
   config.paperclip_defaults = {
