@@ -83,8 +83,8 @@ port: 587,
 domain: "http://fathomless-bayou-9051.herokuapp.com/",
 authentication: "plain",
 enable_starttls_auto: true,
-user_name: ENV["alexjcole@gmail.com"],
-password: ENV["Thovqhib5775"]
+user_name: "alexjcole@gmail.com",
+password: "Thovqhib5775"
 }
 
 
