@@ -78,13 +78,13 @@ config.action_mailer.raise_delivery_errors = false
 config.action_mailer.default :charset => "utf-8"
 
 config.action_mailer.smtp_settings = {
-address: "smtp.postmarkapp.com",
-port: 587,
+address: ENV['smtp.postmarkapp.com'],
+port: '25',
 domain: "http://fathomless-bayou-9051.herokuapp.com/",
+user_name: ENV['b40a4d4d-ea9c-4699-86c8-e630e628f229'],
+password: ENV['b40a4d4d-ea9c-4699-86c8-e630e628f229'],
 authentication: "plain",
-enable_starttls_auto: true,
-user_name: "b40a4d4d-ea9c-4699-86c8-e630e628f229",
-password: "b40a4d4d-ea9c-4699-86c8-e630e628f229"
+enable_starttls_auto: true
 }
 
 
