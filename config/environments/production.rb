@@ -79,6 +79,17 @@ config.action_mailer.smtp_settings = {
 :domain => 'http://fathomless-bayou-9051.herokuapp.com/'
 }
 
+ActionMailer::Base.delivery_method = :smtp
+ActionMailer::Base.smtp_settings = {
+:tls => true,
+:address => "smtp.postmarkapp.com",
+:port => 587,
+:domain => "http://fathomless-bayou-9051.herokuapp.com/",
+:authentication => :login,
+:user_name => "b40a4d4d-ea9c-4699-86c8-e630e628f229",
+:password => "b40a4d4d-ea9c-4699-86c8-e630e628f229"
+}
+
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
 
