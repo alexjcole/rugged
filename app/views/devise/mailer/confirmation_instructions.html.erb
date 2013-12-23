@@ -1,6 +1,437 @@
-<h1 class="omg"> Rugged</h1>
-<p>Welcome <%= @email %>!</p>
 
-<p>You can confirm your account email through the link below:</p>
 
-<p><%= link_to 'Confirm my account', confirmation_url(@resource, :confirmation_token => @token) %></p>
+<!DOCTYPE html PUBLIC"> <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width">
+      <title>RUGGED</title>
+
+      
+
+  <style type="text/css">
+	@media only screen and (max-width: 600px){
+		table{
+			font-size:14px !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		h1{
+			font-size:24px !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		h2{
+			font-size:20px !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		h3{
+			font-size:18px !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		h4{
+			font-size:14px !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		h5{
+			font-size:14px !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		.header{
+			margin:0 auto;
+			width:92% !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		.logo{
+			max-width:70%;
+		}
+
+}	@media only screen and (max-width: 600px){
+		.logo-small{
+			width:120px !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		.content--wrapper{
+			margin:0 auto;
+			padding:0 !important;
+			width:92% !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		.content--wrapper img,.flex--size img{
+			height:auto !important;
+			max-width:100% !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		.content--wrapper img.bordered{
+			height:auto !important;
+			max-width:98% !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		.content--footer{
+			text-align:left !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		.content--footer a{
+			color:#fff !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		.flex--size{
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		.flex--content{
+			margin:0 auto !important;
+			width:92% !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		.flex--content img{
+			height:auto !important;
+			max-width:100% !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		.flex--stack{
+			display:block !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		.flex--title{
+			width:190px !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		.hide-small{
+			display:none;
+		}
+
+}	@media only screen and (max-width: 600px){
+		.right-to-left{
+			text-align:left !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		.reduce--size{
+			font-size:13px;
+			padding-bottom:10px;
+		}
+
+}	@media only screen and (max-width: 600px){
+		.small--type{
+			font-size:10px !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		.btn--full{
+			text-align:center;
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		.space--bottom{
+			padding-bottom:10px;
+		}
+
+}	@media only screen and (max-width: 600px){
+		.slantIndent{
+			padding-left:0 !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		.stacked-space{
+			padding-bottom:15px;
+		}
+
+}	@media only screen and (max-width: 600px){
+		.footer{
+			font-size:12px !important;
+			margin:0 auto;
+			width:92% !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		.footer a{
+			color:#ffffff !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		img.img--shrink{
+			max-width:140px !important;
+		}
+
+}	@media only screen and (max-width: 600px){
+		.center-text{
+			text-align:center;
+		}
+
+}	@media only screen and (max-width: 600px){
+		.noPadding-top{
+			padding-top:0 !important;
+		}
+
+}		.link-mask a{
+			color:#696969 !important;
+			font-weight:normal !important;
+			text-decoration:none !important;
+		}
+    .butt {
+      background: #c5df6f;
+      border-radius: 3px; 
+      padding-bottom: 10px; 
+      padding-top: 10px;
+    }
+</style>        <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+            </script>
+            <script type="text/javascript">
+            try {
+                var _gaq = _gaq || [];
+                _gaq.push(["_setAccount", "UA-9740749-23"]);
+                _gaq.push(["_setDomainName", ".campaign-archive.com"]);
+                _gaq.push(["_trackPageview"]);
+                _gaq.push(["_setAllowLinker", true]);
+            } catch(err) {console.log(err);}</script>
+                    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> <script src="http://us5.campaign-archive1.com/js/mailchimp/fancyzoom.mc.js"></script>  <script type="text/javascript">
+    function incrementFacebookLikeCount() {
+        var current = parseInt($('#campaign-fb-like-btn span').html());
+        $('#campaign-fb-like-btn span').fadeOut().html(++current).fadeIn();
+    }
+
+    function getUrlParams(str) {
+        var vars = {}, hash;
+        if (!str) return vars;
+        var hashes = str.slice(str.indexOf('?') + 1).split('&');
+        for(var i = 0; i < hashes.length; i++) {
+            hash = hashes[i].split('=');
+            vars[hash[0]] = hash[1];
+        }
+        return vars;
+    }
+    
+    function setupSocialSharingStuffs() {
+        var numSocialElems = $('a[rel=socialproxy]').length;
+        var numSocialInitialized = 0;
+        var urlParams = getUrlParams(window.document.location.href);
+        var paramsToCopy = {'e':true, 'eo':true};
+        $('a[rel=socialproxy]').each(function() {
+            var href = $(this).attr('href');
+            var newHref = decodeURIComponent(href.match(/socialproxy=(.*)/)[1]);
+            // for facebook insanity to work well, it needs to all be run against just campaign-archive
+            newHref = newHref.replace(/campaign-archive(\d)/gi, 'campaign-archive');
+            var newHrefParams = getUrlParams(newHref);
+            for(var param in urlParams) {
+                if ((param in paramsToCopy) && !(param in newHrefParams)) {
+                    newHref += '&' + param + '=' + urlParams[param];
+                }
+            }
+            $(this).attr('href', newHref);
+            if (href.indexOf('facebook-comment') !== -1) {
+                $(this).fancyZoom({"zoom_id": "social-proxy", "width":620, "height":450, "iframe_height": 450});
+            } else {
+                $(this).fancyZoom({"zoom_id": "social-proxy", "width":500, "height":200, "iframe_height": 500});
+            }
+            numSocialInitialized++;
+                    });
+    }
+	if (window.top!=window.self){
+        $(function() {
+          var iframeOffset = $("#archive", window.parent.document).offset();
+          $("a").each(function () {
+              var link = $(this);
+              var href = link.attr("href");
+              if (href && href[0] == "#") {
+                  var name = href.substring(1);
+                  $(this).click(function () {
+                      var nameElement = $("[name='" + name + "']");
+                      var idElement = $("#" + name);
+                      var element = null;
+                      if (nameElement.length > 0) {
+                          element = nameElement;
+                      } else if (idElement.length > 0) {
+                          element = idElement;
+                      }
+         
+                      if (element) {
+                          var offset = element.offset();
+                          var height = element.height();
+                          //3 is totally arbitrary, but seems to work best.
+                          window.parent.scrollTo(offset.left, (offset.top + iframeOffset.top - (height*3)) );
+                      }
+         
+                      return false;
+                  });
+              }
+          });
+        });
+    }
+</script>  <script type="text/javascript">
+            $(document).ready(function() {
+                setupSocialSharingStuffs();
+            });
+        </script> <style type="text/css">
+            /* Facebook/Google+ Modals */
+            #social-proxy { background:#fff; -webkit-box-shadow: 4px 4px 8px 2px rgba(0,0,0,.2); box-shadow: 4px 4px 8px 2px rgba(0,0,0,.2); padding-bottom:35px; z-index:1000; }
+            #social-proxy_close { display:block; position:absolute; top:0; right:0; height:30px; width:32px; background:transparent url(http://cdn-images.mailchimp.com/awesomebar-sprite.png) 0 -200px; text-indent:-9999px; outline:none; font-size:1px; }
+            #social-proxy_close:hover { background-position:0 -240px; }
+            body { padding-bottom:50px !important; }
+        </style> </head>
+    
+    <body leftmargin="0" marginwidth="0" marginheight="0" offset="0" topmargin="0">
+    <center>
+      <!-- // BEGIN BODYWRAP -->
+        <table bgcolor="#efeddf" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-top: 2px solid #efeddf; color: #525254; font-family: 'Open Sans', AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4;">
+          <tr>
+            <td>
+
+              <!-- // BEGIN HEADER WRAPPER -->
+                <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td align="center" valign="top">
+
+                      <!-- // BEGIN HEADER -->
+                        <table border="0" cellpadding="0" cellspacing="0" class="header" style="color: #999999; font-size: 10px; width: 580px;">
+                          <tr>                         
+                            <td valign="top" class="mobile--header" style="padding-bottom: 19px; padding-top: 15px;">
+                              
+                              <a href="http://codeschool.com/?utm_medium=email&utm_campaign=october_newsletter&utm_source=mailchimp&utm_content=null" style="display: block; width: 150px;"><img src="http://i1352.photobucket.com/albums/q655/eanplatter/ScreenShot2013-12-22at33736PM_zps3861ef8d.png?t=1387751909" alt="Code School - Learn by doing" class="logo" width="150">
+                              </a>
+                            
+                            </td>
+                            <td>
+                              <table align="right" border="0" cellpadding="0" cellspacing="0" class="flex--size hide-small" style="color: #999999; font-size: 10px; width: 400px;">
+                                <tr>
+                                  <td>Are you Rugged?</td>
+                                </tr>
+                              </table>
+                            </td>                
+                          </tr>
+                        </table>
+                      <!-- // END HEADER -->
+
+                    </td>
+                  </tr>
+                </table>
+              <!-- // END HEADER WRAPPER  -->
+
+              <!-- // BEGIN CONTENT WRAPPER  -->
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td align="center" valign="top">
+
+                      
+<!-- / Halloween -->
+<table border="0" cellpadding="0" cellspacing="0" class="flex--size" style="width: 100%;">
+  <!-- / Spacer -->
+  <tr bgcolor="#bd9e6f">
+    <td height="5"></td>
+  </tr>
+  <tr>
+    <td>
+      <img alt="Halloween animation" src="http://i1352.photobucket.com/albums/q655/eanplatter/ScreenShot2013-12-22at34531PM_zps4887497a.png?t=1387752388" style="display: block;" width="100%">
+      <img alt="" src="" style="display: block;" width="100%">
+    </td>
+  </tr>
+  <tr bgcolor="#3C3C3C">
+    <td align="center" valign="top">
+      <table border="0" cellpadding="0" cellspacing="0" class="content--wrapper" style="border-radius: 4px; color: #ffffff; font-family: 'Open Sans', AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4; width: 580px;">
+        <!-- / Inner Spacer -->
+        <tr>
+          <td height="20"></td>
+        </tr>
+        <tr>
+          <td align="left">
+            <h2 style="color: #e4ecb4; font-size: 42px; margin: 0; padding-bottom: 5px;">Confirm Account</h2>
+            In order to complete your account registration, we need you to confirm your account. Click the button below to do so!
+          </td>
+        </tr>
+        <tr>
+          <td height="25"></td>
+        </tr>
+        <tr>
+          <td align="center">
+            <!-- / Button -->
+            <table border="0" cellpadding="0" cellspacing="0" height="5" style="font-family: 'Open Sans', AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4; padding-bottom: 2px; padding-top: 2px; text-decoration: none;" width="500">
+              <tr>
+                <td style="background: #FF9400; border-radius: 3px; padding-bottom: 0px; padding-top: 0px;" valign="">
+                  <div style="color: #6e861e; display: block; font-size: 10px; font-weight: bold; text-align: center; text-decoration: none; text-transform: uppercase;">
+                  	<span style="color: #291f08; font-size: 3px; padding: 2px;">
+                    </span>
+                    <p style="font-size: 30px; padding-top:13px; text-decoration:none;">
+                      <%= link_to 'CONFIRM', confirmation_url(@resource, :confirmation_token => @token) %>
+                    </p>
+                    <br>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            <span style="color: #695f47;"></span>
+          </td>
+        </tr>
+        <tr>
+          <td height="30"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <!-- / Spacer -->
+  <tr bgcolor="#291f08">
+    <td height="5"></td>
+  </tr>
+</table>
+
+<!-- / Signature -->
+<table bgcolor="#0e1216" border="0" cellpadding="0" cellspacing="0" class="flex--size" style="width: 100%;">
+  <tr>
+    <td>
+      <table align="center" border="0" cellpadding="0" cellspacing="0" class="flex--content" style="font-family: 'Open Sans', AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4; width: 580px;">
+        <tr>
+          <td height="30"></td>
+        </tr>
+        <!-- / Signature -->
+        <tr>
+          <td align="left" style="color: #efeddf;" valign="top">
+            Thanks,
+            <br>
+            -Rugged Team
+          </td>
+        </tr>
+        <tr>
+          <td align="left" style="color: #efeddf;" valign="top">
+                    <a href="http://www.wearerugged.com">
+                      <img src="http://i1352.photobucket.com/albums/q655/eanplatter/0f392d3a-dc21-4c39-90fc-5e8af53a2368_zps1e0d6732.png?t=1387756847" alt="Code School" width="53">
+                    </a>
+          </td>
+        </tr>
+        <tr>
+          <td height="30"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+<!-- // END FOOTER WRAPPER  -->
+
+        </td>
+        </tr>
+
+        </table>
+      <!-- // END BODYWRAP -->
+
+    </center>
+  </body>    
+</html>
+
+		
+
+
