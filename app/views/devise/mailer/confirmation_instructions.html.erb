@@ -323,30 +323,8 @@
         <tr>
           <td align="left">
             <h2 style="color: #e4ecb4; font-size: 42px; margin: 0; padding-bottom: 5px;">Confirm Account</h2>
-            In order to complete your account registration, we need you to confirm your account. Click the button below to do so!
-          </td>
-        </tr>
-        <tr>
-          <td height="25"></td>
-        </tr>
-        <tr>
-          <td align="center">
-            <!-- / Button -->
-            <table border="0" cellpadding="0" cellspacing="0" height="5" style="font-family: 'Open Sans', AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4; padding-bottom: 2px; padding-top: 2px; text-decoration: none;" width="500">
-              <tr>
-                <td style="background: #FF9400; border-radius: 3px; padding-bottom: 0px; padding-top: 0px;" valign="">
-                  <div style="color: #6e861e; display: block; font-size: 10px; font-weight: bold; text-align: center; text-decoration: none; text-transform: uppercase;">
-                  	<span style="color: #291f08; font-size: 3px; padding: 2px;">
-                    </span>
-                    <p style="font-size: 30px; padding-top:13px; text-decoration:none;">
-                      <%= link_to 'CONFIRM', confirmation_url(@resource, :confirmation_token => @token) %>
-                    </p>
-                    <br>
-                  </div>
-                </td>
-              </tr>
-            </table>
-            <span style="color: #695f47;"></span>
+            In order to complete your account registration, we need you to confirm your account. Click the Link below to do so!
+            <p><%= link_to 'CONFIRM', confirmation_url(@resource, :confirmation_token => @token) %></p>
           </td>
         </tr>
         <tr>
