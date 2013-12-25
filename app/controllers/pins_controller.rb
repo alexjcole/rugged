@@ -4,7 +4,7 @@ class PinsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
   require 'will_paginate/array'
   def index
-   @pins = Pin.all.sort_by{|pin|-pin.likes.size}.paginate(:page => params[:page], :per_page => 4)
+   @pins = Pin.all.sort_by{|pin|-pin.likes.size}.paginate(:page => params[:page], :per_page => 20)
     
 
  end
