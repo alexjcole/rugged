@@ -1,12 +1,21 @@
 <%= render 'pages/home'  unless user_signed_in? %>
-
+<div class="post-contents">
+  <div class="panel panel-heading panel-default">
+    <h1>TOP VOTED POSTS</h1>
+  </div>
 <div id="pins" class="transitions-enabled">
   <% @pins.each do |pin| %>
     <div class="box panel panel-default">
       <%= link_to image_tag(pin.image.url(:medium)), pin %>
       <div class="panel-body">
-        <p><%= pin.description %></p>
-        <p><strong><%= pin.user.name if pin.user %></strong></p>
+        <p class="text-center" id="pins">
+          <%= pin.description %>
+        </p>
+        <p class="username">
+          <strong>
+            <%= pin.user.name if pin.user %>
+          </strong>
+        </p>
           <%= link_to raw('<span class="glyphicon glyphicon-hand-up"></span>'), like_pin_path(pin), method: :put %> <span class="vote"><%= pin.likes.size%></span>
           
           <%= link_to  raw('<span class="glyphicon glyphicon-hand-down"></span>'), dislike_pin_path(pin), method: :put %><span class="vote"><%= pin.dislikes.size%></span>
@@ -23,4 +32,5 @@
 </div>
 <div class="center custom-pagination">
    <%= will_paginate @collection, renderer: BootstrapPagination::Rails %>
+</div>
 </div>

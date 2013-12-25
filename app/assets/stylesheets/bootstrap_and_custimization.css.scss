@@ -34,7 +34,7 @@ $jumbotron-color: #FF9400;
 }
 
 .landing h1 {
-  font-size: 150px !important;
+  font-size: 900% !important;
 }
 
 .landing p {
@@ -84,18 +84,42 @@ a:hover {
 	border-color: black;
 	color: black;
   border-radius: 0px !important;
+  margin-bottom: 0px !important;
 }
 
 .vote {
 	color: white;
 }
 
-.panel {
-	border: 0 px solid black;
+/* PANEL */
+
+.panel-default {
+  border-radius: 0px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 25%;
+  margin-right: 25%;
+
 }
 
+.panel-heading {
+  border-bottom: 7px solid black !important;
+  color: white !important;
+  background-color: black !important;
+  border-radius: 0px;
+}
+
+.panel {
+	border: 7px solid black;
+}
+
+.panel-footer {
+    border-top: 7px solid black !important;
+    background-color: black;
+    border-radius: 0px !important;
+}
 .panel-footer a {
-	color: black !important;
+	color: white !important;
 	text-decoration: none;
 }
 
@@ -214,12 +238,36 @@ a:hover {
   border-color: #214F7B;
 }
 
+.about {
+  background: url(http://i1352.photobucket.com/albums/q655/eanplatter/cartographer_zps65ef033b.png);
+  background-attachment: fixed;
+  padding: 50px;
+  margin-bottom: 30px;
 
+}
 
+.about h1 {
+  font-size: 100px;
+  color: white;
+  padding-bottom: 30px;
+}
 
+.about p {
+  font-size: 30px;
+}
 
+.post-contents {
+  border: 0px solid white;
+}
 
+.username {
+  font-size: 25px;
+  color: white !important;
+}
 
+.edit-links {
+  color: black !important;
+}
 
 
 
