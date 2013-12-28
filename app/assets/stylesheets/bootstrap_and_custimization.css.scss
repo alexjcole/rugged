@@ -269,8 +269,15 @@ a:hover {
   color: black !important;
 }
 
-
-
+.form-control {
+  border-radius: 0px;
+  border-bottom: 1px solid black !important;
+  border-top: 1px solid black !important;
+  border-right: 3px solid black !important;
+  border-left: 3px solid black !important;
+  box-shadow:none !important;
+  outline: none !important;
+}
 
 
 
