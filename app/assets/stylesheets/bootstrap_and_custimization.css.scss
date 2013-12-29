@@ -305,6 +305,11 @@ font-size: 50px;
   color: #FF9400;
   font-size: 50px;
 }
+
+.navbar-brand {
+  font-size:50px !important;
+}
+
 .landingText{
   color: #848484;
 }
@@ -316,6 +321,34 @@ font-size: 50px;
 .landing p {
   font-size: 30px;
 }
+
+.button-box {
+  width: 300px !important;
+  display: block;
+  border-radius: 0px;
+  width: 100% !important;
+}
+
+.panel-default {
+  width: 100% !important;
+  margin: 0% !important;
+}
+
+.form-group {
+  width: 100% !important;
+}
+
+.form-control {
+  width: 100% !important;
+  height: 40px;
+}
+
+.panel-heading {
+  margin: auto !important;
+}
+
+
+
 }
 
 
