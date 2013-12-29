@@ -8,6 +8,8 @@
          url(font-path('ethnocentric.svg') + "#MyFont") format('svg');
 }
 
+
+
 $body-bg: #6b6666;
 $font-family-sans-serif: 'Lato', Helvetica Neue, Arial, sans-serif;
 $navbar-height: 100px;
@@ -22,6 +24,7 @@ $jumbotron-color: #FF9400;
   margin: auto;
 }
 
+
 .landing {
   background: url(http://wallpoper.com/images/00/45/01/48/foggy-mountain-forest_00450148.jpg);
   background-attachment: fixed;
@@ -34,7 +37,7 @@ $jumbotron-color: #FF9400;
 }
 
 .landing h1 {
-  font-size: 900% !important;
+  font-size: 900%;
 }
 
 .landing p {
@@ -279,6 +282,41 @@ a:hover {
   outline: none !important;
 }
 
+@media only screen and (max-device-width: 480px) {
+ 
+.landing {
+  background: url(http://wallpoper.com/images/00/45/01/48/foggy-mountain-forest_00450148.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0px !important;
+  padding: 20px;
+  padding-top: 200px;
+}
+
+.logo {
+font-size: 50px;
+  color: #848484 !important ;
+}
+
+.landing h1 {
+  font-size: 50px;
+}
+.omg {
+  color: #FF9400;
+  font-size: 50px;
+}
+.landingText{
+  color: #848484;
+}
+.landingTextGrey{
+    font-family: 'ethno';
+  color: #848484 !important ;
+}
+
+.landing p {
+  font-size: 30px;
+}
+}
 
 
 
