@@ -8,12 +8,7 @@
          url(font-path('ethnocentric.svg') + "#MyFont") format('svg');
 }
 
-@media all and (max-device-width: 480px) {
-.changeThisFont {
-font-size: 0.5em;
-font-color: red;
-}
-}
+
 
 $body-bg: #6b6666;
 $font-family-sans-serif: 'Lato', Helvetica Neue, Arial, sans-serif;
@@ -287,6 +282,23 @@ a:hover {
   outline: none !important;
 }
 
+@media only screen and (max-device-width: 480px) {
+ 
+.logo {
+font-size: 0.5em;
+font-color: red !important;
+}
+
+.landing h1 {
+  color: red; !important;
+  font-size: 16px;
+}
+.omg {
+  color: red; !important;
+  font-size: 16px;
+}
+
+}
 
 
 
