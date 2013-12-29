@@ -22,6 +22,12 @@ $jumbotron-color: #FF9400;
   margin: auto;
 }
 
+@media all and (max-device-width: 480px) {
+.changeThisFont {
+font-size: 0.5em;
+}
+}
+
 .landing {
   background: url(http://wallpoper.com/images/00/45/01/48/foggy-mountain-forest_00450148.jpg);
   background-attachment: fixed;
