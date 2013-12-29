@@ -284,20 +284,39 @@ a:hover {
 
 @media only screen and (max-device-width: 480px) {
  
+.landing {
+  background: url(http://wallpoper.com/images/00/45/01/48/foggy-mountain-forest_00450148.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0px !important;
+  padding: 20px;
+  padding-top: 200px;
+}
+
 .logo {
-font-size: 0.5em;
-font-color: red !important;
+font-size: 45px;
+  color: #848484 !important ;
 }
 
 .landing h1 {
   color: red !important;
-  font-size: 16px;
+  font-size: 45px;
 }
 .omg {
-  color: red !important;
-  font-size: 16px;
+  color: #FF9400;
+  font-size: 45px;
+}
+.landingText{
+  color: #848484;
+}
+.landingTextGrey{
+    font-family: 'ethno';
+  color: #848484 !important ;
 }
 
+.landing p {
+  font-size: 30px;
+}
 }
 
 
