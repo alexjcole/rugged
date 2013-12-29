@@ -1,0 +1,73 @@
+// Place all the styles related to the mobile views here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+@media only screen and (max-device-width: 480px) {
+ 
+.landing {
+  background: url(http://wallpoper.com/images/00/45/01/48/foggy-mountain-forest_00450148.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0px !important;
+  padding: 20px;
+  padding-top: 200px;
+}
+
+.logo {
+font-size: 50px;
+  color: #848484 !important ;
+}
+
+.landing h1 {
+  font-size: 50px;
+}
+.omg {
+  color: #FF9400;
+  font-size: 50px;
+}
+
+.navbar-brand {
+  font-size:50px !important;
+}
+
+.landingText{
+  color: #848484;
+}
+.landingTextGrey{
+    font-family: 'ethno';
+  color: #848484 !important ;
+}
+
+.landing p {
+  font-size: 30px;
+}
+
+.button-box {
+  width: 300px !important;
+  display: block;
+  border-radius: 0px;
+  width: 100% !important;
+}
+
+.panel-default {
+  width: 100% !important;
+  margin: 0% !important;
+}
+
+.form-group {
+  width: 100% !important;
+}
+
+.form-control {
+  width: 100% !important;
+  height: 40px;
+}
+
+.panel-heading {
+  margin: auto !important;
+}
+
+
+
+}
