@@ -1,10 +1,11 @@
 class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :confirmable, :database_authenticatable, :registerable,
+  devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :pins
+  # This makes Usernames unique. They're are just called "names" in this app though
   validates_uniqueness_of :name
   validates :name, presence: true
   acts_as_commontator

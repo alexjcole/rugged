@@ -1,11 +1,9 @@
 <%= render 'pages/home'  unless user_signed_in? %>
 <div class="post-contents">
-  <div class="panel panel-heading panel-default">
-    <h1>TOP VOTED POSTS</h1>
-  </div>
+
 <div id="pins" class="transitions-enabled">
   <% @pins.each do |pin| %>
-    <div class="box panel panel-default">
+    <div class="box panel panel-success">
       <%= link_to image_tag(pin.image.url(:medium)), pin %>
       <div class="panel-body">
         <p class="text-center" id="pins">

@@ -4,7 +4,9 @@
 
 
 @media only screen and (max-device-width: 480px) {
- 
+
+  
+  
 .landing {
   background: url(http://wallpoper.com/images/00/45/01/48/foggy-mountain-forest_00450148.jpg);
   background-attachment: fixed;
@@ -12,6 +14,7 @@
   margin: 0px !important;
   padding: 20px;
   padding-top: 20px;
+  height: 600px;
 }
 
 .logo {
@@ -48,9 +51,7 @@
   display: block;
   border-radius: 5px;
   width: 100% !important;
-  height: 80px;
-  padding-top: 20px;
-  font-size: 30px;
+  height: 40px;
   margin-top: 50px;
   
 }
@@ -73,6 +74,10 @@
   margin: auto !important;
 }
 
-
+.panel-success {
+  width: 155px !important;
+  margin: 2px !important;
+  
+}
 
 }
