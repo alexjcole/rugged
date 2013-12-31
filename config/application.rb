@@ -23,12 +23,6 @@ module OMRails
     # add app/assets/fonts to the asset path
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
 
-<<<<<<< HEAD
-    config.assets.enabled = true
     config.assets.initialize_on_precompile = false
-=======
-
-    config.assets.initialize_on_precompile = true
->>>>>>> 0fc9dd5413555aed2b5bc6d04fc3e45f7220d48d
-  end
+      end
 end
