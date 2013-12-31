@@ -9,11 +9,11 @@
 }
 
 
-
+$body-bg: #848484;
 $font-family-sans-serif: 'Lato', Helvetica Neue, Arial, sans-serif;
 $navbar-height: 100px;
 $navbar-default-bg: black;
-$navbar-default-brand-color: black;
+$navbar-default-brand-color: #848484;
 $brand-primary: white;
 $jumbotron-bg: black;
 $jumbotron-color: #FF9400;
@@ -23,7 +23,7 @@ $jumbotron-color: #FF9400;
   margin: auto;
 }
 
-body {
+.home-body {
   background: url(/assets/mountain.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
