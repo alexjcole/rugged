@@ -10,11 +10,10 @@
 
 
 
-$body-bg: #6b6666;
 $font-family-sans-serif: 'Lato', Helvetica Neue, Arial, sans-serif;
 $navbar-height: 100px;
 $navbar-default-bg: black;
-$navbar-default-brand-color: #848484;
+$navbar-default-brand-color: black;
 $brand-primary: white;
 $jumbotron-bg: black;
 $jumbotron-color: #FF9400;
@@ -24,11 +23,14 @@ $jumbotron-color: #FF9400;
   margin: auto;
 }
 
-
-.landing {
-  background: url(http://wallpoper.com/images/00/45/01/48/foggy-mountain-forest_00450148.jpg);
+body {
+  background: url(/assets/mountain.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
+
+}
+
+.landing {
   width: 100%;
   height: 1000px;
   margin: 0px !important;
@@ -50,7 +52,7 @@ $jumbotron-color: #FF9400;
 
 .logo {
   font-family: 'ethno';
-  color: #848484 !important ;
+  color: black !important ;
 }
 
 .btn-primary {
@@ -141,11 +143,11 @@ a:hover {
 }
 
 .landingText {
-  color: #848484;
+  color: black;
 }
 .landingTextGrey {
   font-family: 'ethno';
-  color: #848484 !important ;
+  color: black !important ;
 }
 
 .custom-pagination {
@@ -210,18 +212,18 @@ a:hover {
 /* WARNING */
 
 .btn-warning{
-  background-color: #848484;
+  background-color: black;
   color: white !important;
-  border-color: #848484;
+  border-color: black;
 }
 
 .btn-warning:hover,
 .btn-warning:focus,
 .btn-warning:active,
 .btn-warning.active {
-  color: #848484 !important;
+  color: black !important;
   background-color: transparent;
-  border-color: #848484;
+  border-color: black;
 }
 
 /* SUCCESS */
@@ -239,6 +241,10 @@ a:hover {
   color: #214F7B !important;
   background-color: transparent;
   border-color: #214F7B;
+}
+
+.black {
+  color: black;
 }
 
 .about {
@@ -283,7 +289,6 @@ a:hover {
 }
 
 .screenshot-panel {
-  background-color: #848484;
   height: 700px;
 }
 
@@ -294,11 +299,12 @@ a:hover {
 
 .screenshot-words h1 {
   font-size: 100px;
+  color: orange;
 }
 
 .screenshot-words p {
   font-size: 30px;
-  color: white !important;
+  color: black !important;
 }
 
 .screenshot {
@@ -306,9 +312,6 @@ a:hover {
 }
 
 .screenshot-panel-2 {
-  background: url(http://i1352.photobucket.com/albums/q655/eanplatter/tweed_2X_zps40ee0c9b.png);
-  background-repeat: repeat;
-  background-attachment: fixed;
   height: 700px;
 }
 
