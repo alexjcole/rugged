@@ -24,7 +24,8 @@ $jumbotron-color: #FF9400;
 }
 
 .home-body {
-  background: url(/assets/mountain.jpg);
+  background: url(http://i1352.photobucket.com/albums/q655/eanplatter/mountain_zps6c887604.jpg);
+  background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
 
@@ -35,7 +36,7 @@ $jumbotron-color: #FF9400;
   height: 1000px;
   margin: 0px !important;
   padding: 20px;
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
 .landing h1 {
