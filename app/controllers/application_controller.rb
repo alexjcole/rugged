@@ -7,9 +7,10 @@ class ApplicationController < ActionController::Base
 protected
 
  def configure_permitted_parameters
-       devise_parameter_sanitizer.for(:sign_up) << :name
-       devise_parameter_sanitizer.for(:account_update) << :name
-     end
+       devise_parameter_sanitizer.for(:sign_up) << [:name, :email, :password, :password_confirmation, :image, :bio]
+       devise_parameter_sanitizer.for(:account_update) << [:name, :email, :password, :password_confirmation, :image, :bio]
+  end
+
      def check_for_mobile
     session[:mobile_override] = params[:mobile] if params[:mobile]
     prepare_for_mobile if mobile_device?
