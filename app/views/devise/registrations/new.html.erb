@@ -16,7 +16,17 @@
 		  		<%= f.label :email %><br />
 		  		<%= f.email_field :email, :autofocus => true, class: "form-control" %>
 		  </div>
-
+    
+      <div class="form-group">
+        <%= f.label :bio, "Bio" %> <br />
+        <%= f.text_area :bio, :autofocus => true, class: "form-control" %>
+      </div>
+    
+      <div class="form-group">
+        <%= f.label :image, "Display Picture:" %>
+          <%= f.file_field :image, class: "form-control" %>
+      </div>
+    
 		  <div class="form-group">
 		  		<%= f.label :password %><br />
 		  		<%= f.password_field :password, class: "form-control" %>

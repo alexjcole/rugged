@@ -12,6 +12,16 @@
         <%= f.label :name, "Username" %>
         <%= f.text_field :name, class: "form-control", :autofocus => true %>
       </div>
+    
+      <div class="form-group">
+        <%= f.label :bio, "Tell us about yourself! (Optional)" %> <br />
+        <%= f.text_area :bio, :autofocus => true, class: "form-control" %>
+      </div>
+
+      <div class="form-group">
+          <%= f.label :image, "Display Picture:" %>
+          <%= f.file_field :image, class: "form-control" %>
+      </div>    
 
       <div class="form-group">
         <%= f.label :email %>

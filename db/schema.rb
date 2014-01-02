@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131219001413) do
+ActiveRecord::Schema.define(version: 20140102191411) do
 
   create_table "commontator_comments", force: true do |t|
     t.string   "creator_type"
@@ -92,6 +92,11 @@ ActiveRecord::Schema.define(version: 20131219001413) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "name"
+    t.text     "bio"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
