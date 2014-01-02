@@ -18,6 +18,34 @@ $brand-primary: white;
 $jumbotron-bg: black;
 $jumbotron-color: #FF9400;
 
+
+::selection {
+background: #FF9400; /* Safari and Chrome Highlight Color*/
+}
+::-moz-selection {
+background: #ffb7b7; /* Firefox */
+}
+
+.strokeme
+{
+    color: white;
+    text-shadow:
+    -1px -1px 0 #48D126,
+    1px -1px 0 #48D126,
+    -1px 1px 0 #48D126,
+    1px 1px 0 #48D126;  
+}
+.strokemeBlack
+{
+    color: white;
+    text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;  
+}
+
+
 .button-box {
   width: 300px !important;
   margin: auto;
@@ -51,9 +79,19 @@ $jumbotron-color: #FF9400;
   margin: 0px !important;
 }
 
+.logoPrimary {
+  font-family: 'ethno';
+  color: #48D126 !important ;
+}
+.logoSecondary {
+  font-family: 'ethno';
+  color: white !important ;
+}
+
+
 .logo {
   font-family: 'ethno';
-  color: black !important ;
+  color: #48D126 !important ;
 }
 
 .btn-primary {
