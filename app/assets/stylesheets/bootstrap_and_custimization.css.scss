@@ -328,8 +328,14 @@ a:hover {
   height: 700px;
 } 
 
+.feature-text-box {
+  background: rgba(0, 0, 0, 0.290196);
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+
 .screenshot-words {
-  border: 1px solid black;
   text-align: center;
   padding-top: 200px;
   height: 700px;
@@ -338,12 +344,12 @@ a:hover {
 
 .screenshot-words h1 {
   font-size: 100px;
-  color: #0B3861;
+  color: #fff;
 }
 
 .screenshot-words p {
   font-size: 30px;
-  color: black !important;
+  color: #fff !important;
 }
 
 .screenshot {
@@ -359,16 +365,17 @@ a:hover {
     text-align: center;
   padding-top: 200px;
   height: 700px;
+  margin-right: 50px;
 }
 
 .screenshot-words-2 h1 {
   font-size: 100px;
-  color: #0B3861;
+  color: #fff;
 }
 
 .screenshot-words-2 p {
   font-size: 30px;
-  color: black !important;
+  color: #fff !important;
 }
 
 .screenshot-2 {
