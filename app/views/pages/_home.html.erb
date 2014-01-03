@@ -1,12 +1,18 @@
 <div class="home-body">
 <div class="landing center">
-	<h1> <span class="strokeme logoSecondary">R</span><span class="strokemeBlack logoPrimary">UGGED</span></h1>
-	<p class="black">Are You <span class="landingTextGrey"><span class="landingText">RUGGED</span></span>?</p>
+	<h1>
+    <span class="logo"><span class="omg">R</span>UGGED</span>
+  </h1>
+  <div class="subtitle">
+	   <p class="black">Are You <br /> <span class="landingText">RUGGED</span></p>
+  </div>
 	<div class="text-center">
-	<p>
-		<%= link_to "LOGIN", new_user_session_path, class: "btn btn-warning btn-lg btn-block button-box" %>
-		<%= link_to "JOIN", new_user_registration_path, class: "btn btn-warning btn-lg btn-block button-box" %>
-	</p>
+    <div class="button-box">
+    	<p>
+    		<%= link_to "LOGIN", new_user_session_path, class: "btn btn-warning btn-lg btn-block" %>
+    		<%= link_to "JOIN", new_user_registration_path, class: "btn btn-warning btn-lg btn-block" %>
+    	</p>
+    </div>
 	</div>
 </div>
 <div class="screenshot-panel glass">
@@ -41,12 +47,13 @@
 
 <div class="footer">
   <footer class="text-center">
-    <h1>ARE YOU RUGGED?</h1>
-    <p><%= link_to "JOIN", new_user_registration_path, class: "btn btn-info btn-lg btn-block button-box" %></p>
-    <h4 class="logo footer-logo">
-      &copy; <span class="omg">R</span>UGGED INC
+    <h1>ARE YOU <br /> 
+      <span class=" footer-logo">RUGGED</span></h1>
+    <p><%= link_to "JOIN", new_user_registration_path, class: "btn btn-warning btn-lg btn-block button-box" %></p>
+    <h4 class="footer-logo">
+      &copy; RUGGED
     </h4>
-    <h3 class="logo logo-numb">2014</h3>
+    <h3 class="logo-numb">2014</h3>
 
   </footer>
 </div>
