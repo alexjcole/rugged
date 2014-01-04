@@ -470,14 +470,18 @@ a:hover {
 }
 
 .imager img {
-  width: 100%;
+    width:100%;
+    max-height:400px;
 }
 
 .profile-person {
   float: right !important;
   width: 30%;
   height: 500px;
+  overflow: hidden;
+
 }
+
 
 .profile-person p {
   color: #FE2E2E !important;
