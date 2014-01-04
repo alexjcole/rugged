@@ -1,32 +1,21 @@
-<div class="row">
-  <div class ="col-md-3 center">
-    <div class="panel panel-default">
+<div class="profile">
+  <div class ="">
+    <div class="profile-person">
       <!-- Default panel contents -->
-      <div class="panel-heading">
-        <h1><%= @user.name %></h1>
       
           <p class="imager">
             <%= image_tag @user.image.url %>
           </p>
-    
-      </div>
-      <% if @user.bio.present? %>
-        <div class="panel-body">
+      <div class="profile-words">
+          <h1><%= @user.name %></h1>
+          <% if @user.bio.present? %>
           <p><%= @user.bio %></p>
-        </div>
-      <% end %>
-
       </div>
-    </div>
-<div class="panel panel-default col-md-9 center">
-<% for pin in @user.pins %>
-  <div class="box panel-body garble">
-                <%= link_to image_tag(pin.image.url(:medium)), pin_path(pin) %>
-    <ul class="list-group">
-      <li class="list-group-item"><%= pin_path(pin) %></li>
-    </ul>
-        </div>
+      </div> <!-- profile-person -->
+          <% end %>
+        <div class="profile-map">
+          <img src="http://i1352.photobucket.com/albums/q655/eanplatter/blankmap_zpse607be34.png">
+        </div> <!-- profile-map -->
 
-        
-<% end %>
-</div>
+      </div> <!-- col-md-12 -->
+    </div> <!-- profile -->
