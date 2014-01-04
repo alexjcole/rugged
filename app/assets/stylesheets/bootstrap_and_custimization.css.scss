@@ -28,10 +28,10 @@ $jumbotron-color: #FF9400;
 
 
 ::selection {
-background: #FF9400; /* Safari and Chrome Highlight Color*/
+background: #FE2E2E; /* Safari and Chrome Highlight Color*/
 }
 ::-moz-selection {
-background: #ffb7b7; /* Firefox */
+background: #FE2E2E; /* Firefox */
 }
 
 .subtitle
@@ -153,7 +153,12 @@ a:hover {
   border-radius: 0px;
 }
 
+.panel-body p {
+  color: #2E2E2E !important;
+}
+
 .panel {
+  color: #FE2E2E !important;
 	border: 7px solid #2E2E2E;
 }
 
@@ -165,6 +170,10 @@ a:hover {
 .panel-footer a {
 	color: white !important;
 	text-decoration: none;
+}
+
+.panel-info {
+  margin: 20px;  
 }
 
 .comment-box {
@@ -320,7 +329,19 @@ a:hover {
 }
 
 .edit-links {
-  color: black !important;
+  color: #000 !important;
+  margin: 5px;
+}
+
+.edit-links a {
+  color: #000;
+}
+
+.edit-links:hover,
+.edit-links:focus,
+.edit-links:active,
+.edit-links.active a {
+  color: #000 !important;
 }
 
 .form-control {
