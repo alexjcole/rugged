@@ -27,6 +27,11 @@
         <li>
           <%= link_to raw('<span class="glyphicon glyphicon-wrench"></span> Edit Account'), edit_user_registration_path %>
         </li>
+
+    <li>
+          <%= link_to raw('<span class="glyphicon glyphicon-user"></span> My Profile'), current_user %>
+        </li>
+
        <li>
         <%= link_to raw('<span class="glyphicon glyphicon-log-out"></span> Log out'), destroy_user_session_path, method: :delete %>
       </li>
