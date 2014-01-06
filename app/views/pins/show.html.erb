@@ -6,7 +6,10 @@
 		</div>
 		<div class="panel-body">
 		<p><%= @pin.description %></p>
-		<p><strong><%= @pin.user.name if @pin.user %></strong></p>
+		
+		 
+		<p><strong><%= link_to image_tag(@pin.user.image.url), user_path(@pin.user)if @pin.user %></strong>
+			<strong><%= link_to @pin.user.name, user_path(@pin.user)if @pin.user %></strong></p>
 		<div class="comment-box"><%= commontator_thread(@pin)%></div>
 		<div class="edit-links">
 		<% if @pin.user == current_user %>
