@@ -25,15 +25,19 @@ $jumbotron-bg: black;
 $jumbotron-color: #FF9400;
 
 .description-index{
-  font-size: 15px !important;
-  font-weight: bold;
-  color: white !important;
+  font-size: 13px !important;
+    color: white !important;
+    text-align: left;
 }
 
+.show-image img{
+  border-radius: 5px;
+}
 
 .tiny-image img {
   max-width: 40px;
   max-height: 40px;
+  border-radius: 5px;
 }
 
 ::selection {

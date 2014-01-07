@@ -6,10 +6,14 @@
     <div class="box panel panel-success">
       <%= link_to image_tag(pin.image.url(:medium)), pin %>
       <div class="panel-body">
-        <p class="text-center description-index" id="pins">
+        <p class="description-index" id="pins">
+          <% if pin.description.length >= 50 %>
+          <%= pin.description[0,50] + "..." %>
+          <% else %>
           <%= pin.description %>
+          <% end %>
+          
         </p>
-        <small>posted by</small>
         <p class="username">
           <div class="tiny-image">
           <%= link_to image_tag(pin.user.image.url (:medium)), pin.user %>
