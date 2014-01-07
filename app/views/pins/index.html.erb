@@ -6,17 +6,15 @@
     <div class="box panel panel-success">
       <%= link_to image_tag(pin.image.url(:medium)), pin %>
       <div class="panel-body">
-        <p class="text-center" id="pins">
+        <p class="text-center description-index" id="pins">
           <%= pin.description %>
         </p>
-        <div class="displayName">
-        <%= link_to image_tag(pin.user.image.url), pin.user %>
+        <small>posted by</small>
         <p class="username">
           <strong>
             <%= link_to pin.user.name, pin.user if pin.user %>
           </strong>
         </p>
-      </div>
           <%= link_to raw('<span class="glyphicon glyphicon-hand-up"></span>'), like_pin_path(pin), method: :put %> <span class="vote"><%= pin.likes.size%></span>
           
           <%= link_to  raw('<span class="glyphicon glyphicon-hand-down"></span>'), dislike_pin_path(pin), method: :put %><span class="vote"><%= pin.dislikes.size%></span>

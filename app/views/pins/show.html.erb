@@ -8,8 +8,9 @@
 		<p><%= @pin.description %></p>
 		
 		 
-		<p><strong><%= link_to image_tag(@pin.user.image.url), user_path(@pin.user)if @pin.user %></strong>
+      <p><strong><%= link_to image_tag(@pin.user.image.url(:thumb)), user_path(@pin.user)if @pin.user %></strong>
 			<strong><%= link_to @pin.user.name, user_path(@pin.user)if @pin.user %></strong></p>
+      <p><%= @pin.user.name %></p>
 		<div class="comment-box"><%= commontator_thread(@pin)%></div>
 		<div class="edit-links">
 		<% if @pin.user == current_user %>
