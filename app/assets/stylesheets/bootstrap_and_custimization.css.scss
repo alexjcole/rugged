@@ -30,20 +30,10 @@ $jumbotron-color: #FF9400;
   color: white !important;
 }
 
-.displayName{
-  margin-bottom: 10px;
-  border-radius: 5px;
-  height: 50px; 
-  width: 100%;
-  padding: 20px;
-  background-color: red;
-}
 
-.displayBox{
-   margin-bottom: 10px;
-width: 50%;
- height: 50px; 
-  padding: 20px;
+.tiny-image img {
+  max-width: 40px;
+  max-height: 40px;
 }
 
 ::selection {

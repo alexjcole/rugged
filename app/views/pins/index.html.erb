@@ -11,9 +11,12 @@
         </p>
         <small>posted by</small>
         <p class="username">
+          <div class="tiny-image">
+          <%= link_to image_tag(pin.user.image.url (:medium)), pin.user %>
           <strong>
             <%= link_to pin.user.name, pin.user if pin.user %>
           </strong>
+          </div>
         </p>
           <%= link_to raw('<span class="glyphicon glyphicon-hand-up"></span>'), like_pin_path(pin), method: :put %> <span class="vote"><%= pin.likes.size%></span>
           
