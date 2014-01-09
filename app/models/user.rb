@@ -9,6 +9,7 @@ class User < ActiveRecord::Base
   # This makes Usernames unique. They're are just called "names" in this app though
 
   validates :name, presence: true
+  validates :name, uniqueness: true, if: -> { self.name.present? }
   acts_as_commontator
   acts_as_voter
 end
