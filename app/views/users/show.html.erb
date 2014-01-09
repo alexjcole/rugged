@@ -4,7 +4,7 @@
       <!-- Default panel contents -->
       
           <p class="imager">
-            <%= image_tag @user.image.url %>
+            <%= image_tag @user.image.url(:medium) %>
           </p>
       <div class="profile-words">
           <h1><%= @user.name %></h1>
