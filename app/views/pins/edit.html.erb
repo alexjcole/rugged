@@ -1,8 +1,12 @@
 <div class="panel panel-default">
   <div class="panel-heading">
     <h1>EDIT POST</h1>
-  </div>
-<%= render 'form' %>
-</div>
-<%= link_to 'Show', @pin %> |
-<%= link_to 'Back', pins_path %>
+  </div> <!-- panel-heading -->
+    <%= render 'form' %>
+  <div class="panel-footer">
+    <div class="edit-links">
+    <%= link_to 'Show', @pin %> |
+    <%= link_to 'Back', pins_path %>
+    </div> <!-- edit-links -->
+  </div> <!-- panel-footer -->
+</div> <!-- panel-default -->

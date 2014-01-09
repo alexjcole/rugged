@@ -34,6 +34,10 @@ $jumbotron-color: #FF9400;
   border-radius: 5px;
 }
 
+.show-pin img {
+  width:100%;
+}
+
 .tiny-image img {
   max-width: 40px;
   max-height: 40px;
@@ -186,6 +190,10 @@ a:hover {
 	text-decoration: none;
 }
 
+.panel-footer p {
+    color: #fff !important;
+}
+
 .panel-info {
   margin: 20px;  
 }
@@ -261,18 +269,20 @@ a:hover {
 /* PRIMARY */
 
 .btn-primary{
-  background-color: #1F5F2F;
+  background-color: #FE2E2E !important;
   color: white !important;
-  border-color: #1F5F2F;
+  border-color: #FE2E2E !important;
+  opacity: 0.7;
 }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active {
-  background-color: transparent !important;
-  color: #1F5F2F !important;
-  border-color: #1F5F2F;
+  background-color: #FE2E2E !important;
+  color: white !important;
+  opacity: 1;
+  border-color: #FE2E2E;
 }
 
 /* WARNING */
